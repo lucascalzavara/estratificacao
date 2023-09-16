@@ -1,0 +1,92 @@
+<ul class="nav justify-content-center nav-bg-color text-white p-3">
+    <li class="nav-item">
+        <h3>Estratificação de risco em saúde mental</h3>
+    </li>
+  </ul>
+<div class="container">
+    <h5 class="mt-2">Dados</h5>
+    <div class="row">
+        <div class="col-12 col-md-5 col-xl-6">
+            <div class="mb-3">
+                <label for="nomeUsuario" class="form-label">Nome do usuário</label>
+                <input type="text" class="form-control" id="nomeUsuario">
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+            <div class="mb-3">
+                <label for="ocupacaoUsuario" class="form-label">Ocupação</label>
+                <input type="text" class="form-control" id="ocupacaoUsuario">
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+            <div class="mb-3">
+                <label for="numeroProntuario" class="form-label">Número de prontuário</label>
+                <input type="text" class="form-control" id="numeroProntuario">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="mb-3">
+                <label for="nomeProfissional" class="form-label">Nome e inscrição profissional (profissional que realizou atendimento)</label>
+                <input type="text" class="form-control" id="nomeProfissional">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-sm-8">
+            <div class="mb-3">
+                <label for="servicoSaude" class="form-label">Serviço de saúde</label>
+                <input type="text" class="form-control" id="servicoSaude">
+            </div>
+        </div>
+        <div class="col -12 col-sm-4">
+            <div class="mb-3">
+                <label for="data" class="form-label">Data</label>
+                <input type="date" class="form-control" id="data">
+            </div>
+        </div>
+    </div>
+    <hr>
+    <h5>Instruções de preenchimento</h5>
+    <div>1) Devem ser consideradas as manifestações sintomáticas ocorridas somente nos últimos 12 meses</div>
+    <div>2) Todos os grupos devem ser preenchidos</div>
+    <div>3) Marque com "sim" o sinal/sintoma presente</div>
+    <hr>
+    <ng-container *ngFor="let grupo of grupos; let ig = index;">
+        <div class="row border rounded p-1 m-1 mt-2 mb-2" [ngClass]="{'grupo-bc-color-1': ig % 2 === 0, 'grupo-bc-color-2': ig % 2 !== 0}">
+            <div class="col-12 col-md-2">
+                <div class="h-100 w-100 d-flex justify-content-center align-items-center">
+                    <span>{{grupo.nome}}</span><i class="bi bi-question-circle-fill ms-2"></i>
+                </div>
+            </div>
+            <div class="col-12 col-md-10">
+                <ng-container *ngFor="let sintoma of grupo.sintomas; let i = index">
+                    <div class="row border rounded hover p-2" [ngClass]="{'mt-1': i !== 0}" (click)="sintoma.manifestacao = !sintoma.manifestacao; obterResultado();">
+                        <div class="col-9 text-justify">
+                            {{sintoma.descricao}}
+                        </div>
+                        <div class="col-3">
+                            <div class="h-100 w-100 d-flex justify-content-center align-items-center">
+                                <div class="form-check form-switch">
+                                    <input [(ngModel)]="sintoma.manifestacao" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                    <label class="form-check-label" for="flexSwitchCheckDefault">{{sintoma.manifestacao ? 'sim' : 'não'}}</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-container>
+            </div>
+        </div>
+    </ng-container>
+    <hr>
+    <h5>Resultado</h5>
+    <div>Estratificação: {{resultado}}</div>
+    <hr>
+    <div class="mb-3 d-flex align-items-center justify-content-center">
+        <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top" (click)="imprimir()">Imprimir</button>
+    </div>
+</div>
+<div class="bg-success bg-opacity-50 p-3">
+
+</div>
