@@ -57,14 +57,14 @@
         <div class="row border rounded p-1 m-1 mt-2 mb-2" [ngClass]="{'grupo-bc-color-1': ig % 2 === 0, 'grupo-bc-color-2': ig % 2 !== 0}">
             <div class="col-12 col-md-2">
                 <div class="h-100 w-100 d-flex justify-content-center align-items-center">
-                    <span>{{grupo.nome}}</span><i class="bi bi-question-circle-fill ms-2"></i>
+                    <span>{{grupo.nome}}</span><i [tooltip]="grupo.detalhes" class="bi bi-question-circle-fill ms-2"></i>
                 </div>
             </div>
             <div class="col-12 col-md-10">
                 <ng-container *ngFor="let sintoma of grupo.sintomas; let i = index">
                     <div class="row border rounded hover p-2" [ngClass]="{'mt-1': i !== 0}" (click)="sintoma.manifestacao = !sintoma.manifestacao; obterResultado();">
                         <div class="col-9 text-justify">
-                            {{sintoma.descricao}}
+                            <span>{{sintoma.descricao}}</span><i [tooltip]="sintoma.detalhes" class="bi bi-question-circle-fill ms-2"></i>
                         </div>
                         <div class="col-3">
                             <div class="h-100 w-100 d-flex justify-content-center align-items-center">
@@ -84,7 +84,7 @@
     <div>Estratificação: {{resultado}}</div>
     <hr>
     <div class="mb-3 d-flex align-items-center justify-content-center">
-        <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top" (click)="imprimir()">Imprimir</button>
+        <button type="button" class="btn btn-secondary" (click)="imprimir()">Imprimir</button>
     </div>
 </div>
 <div class="bg-success bg-opacity-50 p-3">
