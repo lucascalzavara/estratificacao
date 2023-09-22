@@ -14,6 +14,8 @@ export class HomeComponent {
 
   total = 0;
   resultado = 'Baixo risco';
+  direcionamento = 'Atenção primária';
+  css = 'bg-success text-white';
 
   constructor(private http: HttpClient){
   }
@@ -35,12 +37,18 @@ export class HomeComponent {
     });
     if (this.total <= 40){
       this.resultado = 'Baixo risco';
+      this.direcionamento = 'Atenção primária';
+      this.css = 'bg-success text-white';
     }
     else if (this.total <= 70){
       this.resultado = 'Médio risco';
+      this.direcionamento = 'Ambulatório ou CAPS';
+      this.css = 'bg-warning text-dark';
     }
     else {
       this.resultado = 'Alto risco';
+      this.direcionamento = 'Ambulatório CAPS';
+      this.css = 'bg-danger text-white';
     }
   }
 

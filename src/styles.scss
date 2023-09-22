@@ -25,6 +25,10 @@
 i.bi {
     font-size: 0.8em;
 }
+
+.text-justify{
+    text-align: justify;
+}
 /* Importing Bootstrap SCSS file. */
 @import "./node_modules/bootstrap/scss/bootstrap";
 

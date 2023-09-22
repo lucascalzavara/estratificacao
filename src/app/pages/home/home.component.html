@@ -26,10 +26,22 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-12">
+        <div class="col-12 col-xl-6">
             <div class="mb-3">
                 <label for="nomeProfissional" class="form-label">Nome e inscrição profissional (profissional que realizou atendimento)</label>
                 <input type="text" class="form-control" id="nomeProfissional">
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-xl-3">
+            <div class="mb-3">
+                <label for="municipio" class="form-label">Município</label>
+                <input type="text" class="form-control" id="municipio">
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-xl-3">
+            <div class="mb-3">
+                <label for="cartaoSus" class="form-label">Cartão SUS</label>
+                <input type="text" class="form-control" id="cartaoSus">
             </div>
         </div>
     </div>
@@ -48,7 +60,7 @@
         </div>
     </div>
     <hr>
-    <h5>Instruções de preenchimento</h5>
+    <h5>Instruções de preenchimento<sup>1</sup></h5>
     <div>1) Devem ser consideradas as manifestações sintomáticas ocorridas somente nos últimos 12 meses</div>
     <div>2) Todos os grupos devem ser preenchidos</div>
     <div>3) Marque com "sim" o sinal/sintoma presente</div>
@@ -79,9 +91,40 @@
             </div>
         </div>
     </ng-container>
+    <div class="text-justify">
+        1 - Realizada preferencialmente pelo profissional de nível superior e vinculada à elaboração do plano de cuidados e/ou ao Projeto Terapêutico Singular.
+    </div>
+    <div class="text-justify">
+        2 - Caso o usuário apresente ideação suicida com planejamento e com acesso a um método, associado a um transtorno mental (especialmente depressão ou abuso de substâncias), desespero, presença de delírio ou alucinação ele deverá ser encaminhado imediatamente a serviço de urgência.
+    </div>
     <hr>
     <h5>Resultado</h5>
-    <div>Estratificação: {{resultado}}</div>
+    <div class="row">
+        <div class="col-12">
+            Estratificação
+            <div class="border rounded p-2 mt-2 {{css}}">{{resultado}} - {{direcionamento}}</div>
+        </div>
+    </div>
+    <table class="mt-3 table table-bordered">
+          <tbody>
+            <tr>
+              <td class="fw-bold bg-success bg-opacity-10">Condições Especiais</td>
+              <td class="bg-success bg-opacity-10">Gestação e maternidade recente (há menos de um ano); grupos vulneráveis (ex: indígena, LGBTQIA+, migrante, pessoa em situação de rua, população exposta a agrotóxicos),deficiência intelectual moderada ou severa.</td>
+            </tr>
+            <tr>
+                <td class="fw-bold bg-success bg-opacity-10">Eventos agudos</td>
+                <td class="bg-success bg-opacity-10">Tentativa de suicídio; crise; surto psicótico.</td>
+            </tr>
+          </tbody>
+    </table>
+    <div class="row mt-3">
+        <div class="col-12">
+            <div class="mb-3">
+                <label for="contrarreferencia" class="form-label">Contrarreferência</label>
+                <textarea class="form-control" id="contrarreferencia" rows="3"></textarea>
+              </div>
+        </div>
+    </div>
     <hr>
     <div class="mb-3 d-flex align-items-center justify-content-center">
         <button type="button" class="btn btn-secondary" (click)="imprimir()">Imprimir</button>
