@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Grupo } from 'src/app/models/grupo';
 import { HttpClient } from '@angular/common/http';
+import { Estratificacao } from 'src/app/models/estratificacao';
 
 @Component({
   selector: 'app-home',
@@ -9,51 +10,52 @@ import { HttpClient } from '@angular/common/http';
 })
 
 export class HomeComponent {
-  grupos: Grupo[] = [];
-  urlToJson: string = 'assets/grupos.json';
+  estratificacao = new Estratificacao()
 
-  total = 0;
-  resultado = 'Baixo risco';
-  direcionamento = 'Atenção primária';
-  css = 'bg-success text-white';
+  urlToJson: string = 'assets/grupos.json';
 
   constructor(private http: HttpClient){
   }
 
   ngOnInit(): void {
+    this.estratificacao.total = 0;
+    this.estratificacao.resultado = 'Baixo risco';
+    this.estratificacao.direcionamento = 'Atenção primária';
+    this.estratificacao.css = 'bg-success text-white';
     this.http.get<any>(this.urlToJson).subscribe(res => {
-      this.grupos = res;
+      this.estratificacao.grupos = res;
     });
   }
 
   obterResultado(): void {
-    this.total = 0;
-    this.grupos.forEach(g => {
+    this.estratificacao.total = 0;
+    this.estratificacao.grupos.forEach(g => {
       g.sintomas.forEach(s => {
         if (s.manifestacao){
-          this.total += s.peso;
+          this.estratificacao.total += s.peso;
         }
       })
     });
-    if (this.total <= 40){
-      this.resultado = 'Baixo risco';
-      this.direcionamento = 'Atenção primária';
-      this.css = 'bg-success text-white';
+    if (this.estratificacao.total <= 40){
+      this.estratificacao.resultado = 'Baixo risco';
+      this.estratificacao.direcionamento = 'Atenção primária';
+      this.estratificacao.css = 'bg-success text-white';
     }
-    else if (this.total <= 70){
-      this.resultado = 'Médio risco';
-      this.direcionamento = 'Ambulatório ou CAPS';
-      this.css = 'bg-warning text-dark';
+    else if (this.estratificacao.total <= 70){
+      this.estratificacao.resultado = 'Médio risco';
+      this.estratificacao.direcionamento = 'Ambulatório ou CAPS';
+      this.estratificacao.css = 'bg-warning text-dark';
     }
     else {
-      this.resultado = 'Alto risco';
-      this.direcionamento = 'Ambulatório CAPS';
-      this.css = 'bg-danger text-white';
+      this.estratificacao.resultado = 'Alto risco';
+      this.estratificacao.direcionamento = 'Ambulatório CAPS';
+      this.estratificacao.css = 'bg-danger text-white';
     }
   }
 
   imprimir(): void{
-    window.print();
+    localStorage.setItem('estratificacao', JSON.stringify(this.estratificacao));
+    window.open(window.location.origin + '/imprimir', '_blank');
   }
 }
 
