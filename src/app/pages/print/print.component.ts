@@ -9,6 +9,8 @@ import { Estratificacao } from 'src/app/models/estratificacao';
 })
 export class PrintComponent {
   estratificacao = new Estratificacao();
+  agora = new Date();
+
 
   constructor(private router: Router){}
 

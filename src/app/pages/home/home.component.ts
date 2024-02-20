@@ -19,7 +19,7 @@ export class HomeComponent {
 
   ngOnInit(): void {
     this.estratificacao.total = 0;
-    this.estratificacao.resultado = 'Baixo risco';
+    this.estratificacao.resultado = '0 - 40 | Baixo risco';
     this.estratificacao.direcionamento = 'Atenção primária';
     this.estratificacao.css = 'bg-success text-white';
     this.http.get<any>(this.urlToJson).subscribe(res => {
@@ -37,17 +37,17 @@ export class HomeComponent {
       })
     });
     if (this.estratificacao.total <= 40){
-      this.estratificacao.resultado = 'Baixo risco';
+      this.estratificacao.resultado = '0 - 40 | Baixo risco';
       this.estratificacao.direcionamento = 'Atenção primária';
       this.estratificacao.css = 'bg-success text-white';
     }
     else if (this.estratificacao.total <= 70){
-      this.estratificacao.resultado = 'Médio risco';
+      this.estratificacao.resultado = '41 - 70 | Médio risco';
       this.estratificacao.direcionamento = 'Ambulatório ou CAPS';
       this.estratificacao.css = 'bg-warning text-dark';
     }
     else {
-      this.estratificacao.resultado = 'Alto risco';
+      this.estratificacao.resultado = '70 + | Alto risco';
       this.estratificacao.direcionamento = 'Ambulatório CAPS';
       this.estratificacao.css = 'bg-danger text-white';
     }

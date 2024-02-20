@@ -23,6 +23,24 @@
                 <input type="text" class="form-control" id="numeroProntuario" [(ngModel)]="estratificacao.numeroProntuario" />
             </div>
         </div>
+        <div class="col-12 col-sm-6 col-md-4">
+            <div class="mb-3">
+                <label for="terapiaNaoMedicamentosa" class="form-label">Terapia não  medicamentosa</label>
+                <input type="text" class="form-control" id="terapiaNaoMedicamentosa" [(ngModel)]="estratificacao.terapiaNaoMedicamentosa" />
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+            <div class="mb-3">
+                <label for="referencia" class="form-label">Referências</label>
+                <input type="text" class="form-control" id="referencia" [(ngModel)]="estratificacao.referencia" />
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+            <div class="mb-3">
+                <label for="contrarreferencia" class="form-label">Contrarreferência</label>
+                <input type="text" class="form-control" id="contrarreferencia" [(ngModel)]="estratificacao.contrarreferencia" />
+            </div>
+        </div>
     </div>
     <div class="row">
         <div class="col-12 col-xl-6">
@@ -99,8 +117,17 @@
     <hr>
     <h5>Estratificação</h5>
     <div class="row">
-        <div class="col-12">
-            <div class="border rounded p-2 mt-2 {{estratificacao.css}}">{{estratificacao.resultado}} - {{estratificacao.direcionamento}}</div>
+        <div class="col-12 col-md-4">
+            <label class="form-label">Pontuação Total</label>
+            <div class="border rounded p-2 mt-2 {{estratificacao.css}}">{{estratificacao.total}}</div>
+        </div>
+        <div class="col-12 col-md-4">
+            <label class="form-label">Resultado</label>
+            <div class="border rounded p-2 mt-2 {{estratificacao.css}}">{{estratificacao.resultado}}</div>
+        </div>
+        <div class="col-12 col-md-4">
+            <label class="form-label">Direcionamento</label>
+            <div class="border rounded p-2 mt-2 {{estratificacao.css}}">{{estratificacao.direcionamento}}</div>
         </div>
     </div>
     <table class="mt-3 table table-bordered">
@@ -115,12 +142,10 @@
             </tr>
           </tbody>
     </table>
-    <div class="row mt-3">
-        <div class="col-12">
-            <div class="mb-3">
-                <label for="contrarreferencia" class="form-label">Contrarreferência</label>
-                <textarea class="form-control" id="contrarreferencia" rows="3" [(ngModel)]="estratificacao.contrarreferencia"></textarea>
-              </div>
+    <div class="col-12 col-md-5">
+        <div class="mb-3">
+            <label for="local" class="form-label">Local</label>
+            <input type="text" class="form-control" id="local" [(ngModel)]="estratificacao.local"/>
         </div>
     </div>
     <hr>

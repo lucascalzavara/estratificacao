@@ -10,10 +10,13 @@ export class Estratificacao{
     cartaoSus: string = '';
     servicoSaude: string = '';
     data?: Date ;
+    referencia: string = '';
     contrarreferencia: string = '';
+    terapiaNaoMedicamentosa: string = '';
 
     total: number = 0;
     resultado: string = '';
     direcionamento: string = '';
     css: string = '';
+    local: string = '';
 }

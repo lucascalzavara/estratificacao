@@ -3,42 +3,56 @@
         <h3>Estratificação de risco em saúde mental</h3>
     </li>
   </ul>
-<div class="container">
+<div class="">
     <div class="row">
         <div class="col-6">
-            <div class="mb-3">
+            <div class="mb-1">
                 <label class="fs-8">Nome do usuário</label>
                 <div class="fs-7">{{estratificacao.nomeUsuario}}</div>
             </div>
         </div>
         <div class="col-3">
-            <div class="mb-3">
+            <div class="mb-1">
                 <label class="fs-8">Ocupação</label>
                 <div class="fs-7">{{estratificacao.ocupacao}}</div>
             </div>
         </div>
         <div class="col-3">
-            <div class="mb-3">
+            <div class="mb-1">
                 <label class="fs-8">Número de prontuário</label>
                 <div class="fs-7">{{estratificacao.numeroProntuario}}</div>
             </div>
         </div>
-    </div>
-    <div class="row">
+        <div class="col-4">
+            <div class="mb-1">
+                <label class="fs-8">Terapia não  medicamentosa</label>
+                <div class="fs-7">{{estratificacao.terapiaNaoMedicamentosa}}</div>
+            </div>
+        </div><div class="col-4">
+            <div class="mb-1">
+                <label class="fs-8">Referências</label>
+                <div class="fs-7">{{estratificacao.referencia}}</div>
+            </div>
+        </div><div class="col-4">
+            <div class="mb-1">
+                <label class="fs-8">Contrarreferência</label>
+                <div class="fs-7">{{estratificacao.contrarreferencia}}</div>
+            </div>
+        </div>
         <div class="col-6">
-            <div class="mb-3">
+            <div class="mb-1">
                 <label class="fs-8">Serviço de saúde</label>
                 <div class="fs-7">{{estratificacao.servicoSaude}}</div>
             </div>
         </div>
         <div class="col-3">
-            <div class="mb-3">
+            <div class="mb-1">
                 <label class="fs-8">Município</label>
                 <div class="fs-7">{{estratificacao.municipio}}</div>
             </div>
         </div>
         <div class="col-3">
-            <div class="mb-3">
+            <div class="mb-1">
                 <label class="fs-8">Cartão SUS</label>
                 <div class="fs-7">{{estratificacao.cartaoSus}}</div>
             </div>
@@ -46,13 +60,13 @@
     </div>
     <div class="row">
         <div class="col-8">
-            <div class="mb-3">
+            <div class="mb-1">
                 <label class="fs-8">Nome e inscrição profissional (profissional que realizou atendimento)</label>
                 <div class="fs-7">{{estratificacao.nomeInscricaoProficional}}</div>
             </div>
         </div>
         <div class="col-4">
-            <div class="mb-3">
+            <div class="mb-1">
                 <label class="fs-8">Data</label>
                 <div class="fs-7">{{estratificacao.data | date:'dd/MM/yyyy'}}</div>
             </div>
@@ -96,8 +110,17 @@
     <hr>
     <h5 class="fs-7">Estratificação</h5>
     <div class="row">
-        <div class="col-12">
-            <div class="border rounded p-1 mt-1 fs-7">{{estratificacao.resultado}} - {{estratificacao.direcionamento}}</div>
+        <div class="col-4">
+            <label class="form-label fs-7">Pontuação Total</label>
+            <div class="border rounded p-1 mt-1 fs-7">{{estratificacao.total}}</div>
+        </div>
+        <div class="col-4">
+            <label class="form-label fs-7">Resultado</label>
+            <div class="border rounded p-1 mt-1 fs-7">{{estratificacao.resultado}}</div>
+        </div>
+        <div class="col-4">
+            <label class="form-label fs-7">Direcionamento</label>
+            <div class="border rounded p-1 mt-1 fs-7">{{estratificacao.direcionamento}}</div>
         </div>
     </div>
     <table class="mt-3 table table-bordered">
@@ -112,10 +135,8 @@
             </tr>
           </tbody>
     </table>
-    <div class="row mt-3">
-        <div class="col-12">
-            <label class="fs-8">Contrarreferência</label>
-            <div class="fs-7">{{estratificacao.contrarreferencia}}</div>
-        </div>
+    <div class="col-4 fs-7">{{estratificacao.local}}, {{agora | date: 'dd/MM/yyyy'}}</div>
+    <div class="row mt-5">
+        <div class="col-8 offset-2 text-center border-top fs-7">Assinatura/Carimbo do solicitante</div>
     </div>
 </div>
