@@ -135,7 +135,7 @@
             </tr>
           </tbody>
     </table>
-    <div class="col-4 fs-7">{{estratificacao.local}}, {{agora | date: 'dd/MM/yyyy'}}</div>
+    <div class="col-4 fs-7">{{estratificacao.local}}<span *ngIf="estratificacao.local">, </span> {{agora | date: 'dd/MM/yyyy'}}</div>
     <div class="row mt-5">
         <div class="col-8 offset-2 text-center border-top fs-7">Assinatura/Carimbo do solicitante</div>
     </div>
