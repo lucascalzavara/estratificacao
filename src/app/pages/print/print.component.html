@@ -1,6 +1,6 @@
 <ul class="nav justify-content-center nav-bg-color text-white p-3">
     <li class="nav-item">
-        <h3>Estratificação de risco em saúde mental</h3>
+        <h3>ESTRATIFICAÇÃO DE RISCO EM SAÚDE MENTAL - VERSÃO REDUZIDA</h3>
     </li>
   </ul>
 <div class="">
@@ -13,30 +13,32 @@
         </div>
         <div class="col-3">
             <div class="mb-1">
-                <label class="fs-8">Ocupação</label>
-                <div class="fs-7">{{estratificacao.ocupacao}}</div>
+                <label class="fs-8">Data de nascimento</label>
+                <div class="fs-7">{{estratificacao.dataNascimento}}</div>
             </div>
         </div>
         <div class="col-3">
             <div class="mb-1">
-                <label class="fs-8">Número de prontuário</label>
-                <div class="fs-7">{{estratificacao.numeroProntuario}}</div>
+                <label class="fs-8">Telefone</label>
+                <div class="fs-7">{{estratificacao.telefone}}</div>
             </div>
         </div>
-        <div class="col-4">
+        <div class="col-6">
             <div class="mb-1">
-                <label class="fs-8">Terapia não  medicamentosa</label>
-                <div class="fs-7">{{estratificacao.terapiaNaoMedicamentosa}}</div>
+                <label class="fs-8">Endereço</label>
+                <div class="fs-7">{{estratificacao.endereco}}</div>
             </div>
-        </div><div class="col-4">
+        </div>
+        <div class="col-3">
             <div class="mb-1">
-                <label class="fs-8">Referências</label>
-                <div class="fs-7">{{estratificacao.referencia}}</div>
+                <label class="fs-8">Número</label>
+                <div class="fs-7">{{estratificacao.numero}}</div>
             </div>
-        </div><div class="col-4">
+        </div>
+        <div class="col-3">
             <div class="mb-1">
-                <label class="fs-8">Contrarreferência</label>
-                <div class="fs-7">{{estratificacao.contrarreferencia}}</div>
+                <label class="fs-8">Complemento</label>
+                <div class="fs-7">{{estratificacao.complemento}}</div>
             </div>
         </div>
         <div class="col-6">
@@ -57,8 +59,6 @@
                 <div class="fs-7">{{estratificacao.cartaoSus}}</div>
             </div>
         </div>
-    </div>
-    <div class="row">
         <div class="col-8">
             <div class="mb-1">
                 <label class="fs-8">Nome e inscrição profissional (profissional que realizou atendimento)</label>
@@ -69,6 +69,22 @@
             <div class="mb-1">
                 <label class="fs-8">Data</label>
                 <div class="fs-7">{{estratificacao.data | date:'dd/MM/yyyy'}}</div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="mb-1">
+                <label class="fs-8">Terapia não  medicamentosa</label>
+                <div class="fs-7">{{estratificacao.terapiaNaoMedicamentosa}}</div>
+            </div>
+        </div><div class="col-4">
+            <div class="mb-1">
+                <label class="fs-8">Referência</label>
+                <div class="fs-7">{{estratificacao.referencia}}</div>
+            </div>
+        </div><div class="col-4">
+            <div class="mb-1">
+                <label class="fs-8">Contrarreferência</label>
+                <div class="fs-7">{{estratificacao.contrarreferencia}}</div>
             </div>
         </div>
     </div>

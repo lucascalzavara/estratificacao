@@ -3,16 +3,19 @@ import { Grupo } from "./grupo";
 export class Estratificacao{
     nomeUsuario: string = ''
     grupos: Grupo[] = [];
-    ocupacao: string = '';
-    numeroProntuario: string = '';
+    dataNascimento?: Date;
+    telefone: string = '';
     nomeInscricaoProficional: string = '';
     municipio: string = '';
     cartaoSus: string = '';
     servicoSaude: string = '';
-    data?: Date ;
+    data?: Date;
     referencia: string = '';
     contrarreferencia: string = '';
     terapiaNaoMedicamentosa: string = '';
+    endereco: string = '';
+    numero: string = '';
+    complemento: string = '';
 
     total: number = 0;
     resultado: string = '';

@@ -1,6 +1,6 @@
 <ul class="nav justify-content-center nav-bg-color text-white p-3">
     <li class="nav-item">
-        <h3>Estratificação de risco em saúde mental</h3>
+        <h3>ESTRATIFICAÇÃO DE RISCO EM SAÚDE MENTAL - VERSÃO REDUZIDA</h3>
     </li>
   </ul>
 <div class="container">
@@ -13,40 +13,38 @@
         </div>
         <div class="col-12 col-sm-6 col-md-3">
             <div class="mb-3">
-                <label for="ocupacaoUsuario" class="form-label">Ocupação</label>
-                <input type="text" class="form-control" id="ocupacaoUsuario" [(ngModel)]="estratificacao.ocupacao"/>
+                <label for="dataNascimento" class="form-label">Data de nascimento</label>
+                <input type="date" class="form-control" id="dataNascimento" [(ngModel)]="estratificacao.dataNascimento"/>
             </div>
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-xl-3">
             <div class="mb-3">
-                <label for="numeroProntuario" class="form-label">Número de prontuário</label>
-                <input type="text" class="form-control" id="numeroProntuario" [(ngModel)]="estratificacao.numeroProntuario" />
+                <label for="telefone" class="form-label">Telefone</label>
+                <input type="text" class="form-control" id="telefone" [(ngModel)]="estratificacao.telefone" />
             </div>
         </div>
-        <div class="col-12 col-sm-6 col-md-4">
+        <div class="col-12 col-md-5 col-xl-6">
             <div class="mb-3">
-                <label for="terapiaNaoMedicamentosa" class="form-label">Terapia não  medicamentosa</label>
-                <input type="text" class="form-control" id="terapiaNaoMedicamentosa" [(ngModel)]="estratificacao.terapiaNaoMedicamentosa" />
+                <label for="endereco" class="form-label">Endereço</label>
+                <input type="text" class="form-control" id="endereco" [(ngModel)]="estratificacao.endereco"/>
             </div>
         </div>
-        <div class="col-12 col-sm-6 col-md-4">
+        <div class="col-12 col-sm-6 col-md-3">
             <div class="mb-3">
-                <label for="referencia" class="form-label">Referências</label>
-                <input type="text" class="form-control" id="referencia" [(ngModel)]="estratificacao.referencia" />
+                <label for="numero" class="form-label">Número</label>
+                <input type="text" class="form-control" id="numero" [(ngModel)]="estratificacao.numero"/>
             </div>
         </div>
-        <div class="col-12 col-sm-6 col-md-4">
+        <div class="col-12 col-sm-6 col-md-4 col-xl-3">
             <div class="mb-3">
-                <label for="contrarreferencia" class="form-label">Contrarreferência</label>
-                <input type="text" class="form-control" id="contrarreferencia" [(ngModel)]="estratificacao.contrarreferencia" />
+                <label for="telefone" class="form-label">Complemento</label>
+                <input type="text" class="form-control" id="telefone" [(ngModel)]="estratificacao.complemento" />
             </div>
         </div>
-    </div>
-    <div class="row">
         <div class="col-12 col-xl-6">
             <div class="mb-3">
-                <label for="nomeProfissional" class="form-label">Nome e inscrição profissional (profissional que realizou atendimento)</label>
-                <input type="text" class="form-control" id="nomeProfissional" [(ngModel)]="estratificacao.nomeInscricaoProficional" />
+                <label for="complemento" class="form-label">Serviço de saúde</label>
+                <input type="text" class="form-control" id="complemento" [(ngModel)]="estratificacao.servicoSaude" />
             </div>
         </div>
         <div class="col-12 col-sm-6 col-xl-3">
@@ -61,18 +59,34 @@
                 <input type="text" class="form-control" id="cartaoSus" [(ngModel)]="estratificacao.cartaoSus" />
             </div>
         </div>
-    </div>
-    <div class="row">
         <div class="col-12 col-sm-8">
             <div class="mb-3">
-                <label for="servicoSaude" class="form-label">Serviço de saúde</label>
-                <input type="text" class="form-control" id="servicoSaude" [(ngModel)]="estratificacao.servicoSaude" />
+                <label for="nomeProfissional" class="form-label">Nome e inscrição profissional (profissional que realizou atendimento)</label>
+                <input type="text" class="form-control" id="nomeProfissional" [(ngModel)]="estratificacao.nomeInscricaoProficional" />
             </div>
         </div>
         <div class="col-12 col-sm-4">
             <div class="mb-3">
                 <label for="data" class="form-label">Data</label>
                 <input type="date" class="form-control" id="data" [(ngModel)]="estratificacao.data" />
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+            <div class="mb-3">
+                <label for="terapiaNaoMedicamentosa" class="form-label">Terapia não  medicamentosa</label>
+                <input type="text" class="form-control" id="terapiaNaoMedicamentosa" [(ngModel)]="estratificacao.terapiaNaoMedicamentosa" />
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+            <div class="mb-3">
+                <label for="referencia" class="form-label">Referência</label>
+                <input type="text" class="form-control" id="referencia" [(ngModel)]="estratificacao.referencia" />
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+            <div class="mb-3">
+                <label for="contrarreferencia" class="form-label">Contrarreferência</label>
+                <input type="text" class="form-control" id="contrarreferencia" [(ngModel)]="estratificacao.contrarreferencia" />
             </div>
         </div>
     </div>
