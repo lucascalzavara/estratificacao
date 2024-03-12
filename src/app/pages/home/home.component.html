@@ -1,6 +1,6 @@
 <ul class="nav justify-content-center nav-bg-color text-white p-3">
     <li class="nav-item">
-        <h3>ESTRATIFICAÇÃO DE RISCO EM SAÚDE MENTAL - VERSÃO REDUZIDA</h3>
+        <h3>ESTRATIFICAÇÃO DE RISCO EM SAÚDE MENTAL</h3>
     </li>
   </ul>
 <div class="container">
@@ -43,7 +43,7 @@
         </div>
         <div class="col-12 col-xl-6">
             <div class="mb-3">
-                <label for="complemento" class="form-label">Serviço de saúde</label>
+                <label for="complemento" class="form-label">Encaminhado por</label>
                 <input type="text" class="form-control" id="complemento" [(ngModel)]="estratificacao.servicoSaude" />
             </div>
         </div>
@@ -71,13 +71,7 @@
                 <input type="date" class="form-control" id="data" [(ngModel)]="estratificacao.data" />
             </div>
         </div>
-        <div class="col-12 col-sm-6 col-md-4">
-            <div class="mb-3">
-                <label for="terapiaNaoMedicamentosa" class="form-label">Terapia não  medicamentosa</label>
-                <input type="text" class="form-control" id="terapiaNaoMedicamentosa" [(ngModel)]="estratificacao.terapiaNaoMedicamentosa" />
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4">
+        <div class="col-12 col-sm-6 col-md-8">
             <div class="mb-3">
                 <label for="referencia" class="form-label">Referência</label>
                 <input type="text" class="form-control" id="referencia" [(ngModel)]="estratificacao.referencia" />
@@ -164,9 +158,8 @@
     </div>
     <hr>
     <div class="mb-3 d-flex align-items-center justify-content-center">
-        <button type="button" class="btn btn-secondary" (click)="imprimir()">Imprimir</button>
+        <button type="button" class="btn btn-outline-warning m-3" (click)="limpar()">Limpar</button>
+        <button type="button" class="btn btn-outline-primary m-3" (click)="imprimir()">Imprimir</button>
     </div>
 </div>
-<div class="bg-success bg-opacity-50 p-3">
-
-</div>
+<div class="bg-success bg-opacity-50 p-3"></div>

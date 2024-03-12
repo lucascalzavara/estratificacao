@@ -12,7 +12,6 @@ export class Estratificacao{
     data?: Date;
     referencia: string = '';
     contrarreferencia: string = '';
-    terapiaNaoMedicamentosa: string = '';
     endereco: string = '';
     numero: string = '';
     complemento: string = '';
