@@ -100,7 +100,7 @@
                 <ng-container *ngFor="let sintoma of grupo.sintomas; let i = index">
                     <div class="row border rounded hover p-1" [ngClass]="{'mt-1': i !== 0}">
                         <div class="col-10 text-justify fs-8">
-                            <span>{{sintoma.descricao}}</span>
+                            <span>{{estratificacao.resumida ? sintoma.descricaoResumida : sintoma.descricao}}</span>
                         </div>
                         <div class="col-2">
                             <div class="h-100 w-100 d-flex justify-content-center align-items-center">

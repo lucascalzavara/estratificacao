@@ -67,6 +67,10 @@ export class HomeComponent {
       });
     });
   }
+
+  setResumida(resumida: boolean){
+    this.estratificacao.resumida = resumida;
+  }
 }
 
 

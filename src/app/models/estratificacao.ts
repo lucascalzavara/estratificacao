@@ -21,4 +21,6 @@ export class Estratificacao{
     direcionamento: string = '';
     css: string = '';
     local: string = '';
+
+    resumida: boolean = true;
 }

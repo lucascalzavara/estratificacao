@@ -5,72 +5,84 @@
         "sintomas": [
             {
                 "descricao": "Ansiedade ou medo persistente, sem causa ou explicação definida, que pode se manifestar com sudorese, tremor, taquicardia, sintomas digestivos e/ou episódios de sensação de morte iminente, de enlouquecer ou de perder o controle",
+                "descricaoResumida": "Ansiedade com ou sem sensação de pânico",
                 "peso": 4,
                 "manifestacao": false,
                 "detalhes": "Sentimento de medo, agudo ou prolongado, acompanhado ou não de manifestações físicas cuja causa não é localizável ou identificável. Inclui episódios de pânico (sensação de morte iminente, de enlouquecer ou de perder o controle)."
             },
             {
                 "descricao": "Insônia ou hipersonia",
+                "descricaoResumida": "Insônia ou hipersonia",
                 "peso": 2,
                 "manifestacao": false,
                 "detalhes": "Dificuldade de adormecer ou de manter-se adormecido, acordar precocemente ou uma sensação de sono não renovador. Hipersonia é a sonolência excessiva durante o dia e/ou sono prolongado a noite."
             },
             {
                 "descricao": "Medo intenso e persistente de alguma coisa ou alguma situação bem definida que não apresente risco real (fobia)",
+                "descricaoResumida": "Fobia (medo intenso de algo sem risco real)",
                 "peso": 2,
                 "manifestacao": false,
                 "detalhes": "Medo excessivo em relação a algum objeto, animal ou situação."
             },
             {
                 "descricao": "Crises conversivas (distúrbios sensórios sem base física) e/ou dissociativas (alteração da qualidade da consciência, estreita/rebaixada)",
+                "descricaoResumida": "Crises conversivas e/ou dissociativas",
                 "peso": 2,
                 "manifestacao": false,
                 "detalhes": "Crises conversivas: Conjunto de manifestações de comportamento, das sensações em que o indivíduo pode ter movimentos corporais bizarros, parecidos com convulsões, imobilidade (paralisia) ou anestesia de membros e/ou sensação de perda de alguma função como a fala, audição ou visão.\nCrises dissociativas: Semelhante a convulsões epilépticas, manifestando- se por alteração da qualidade da consciência em que esta se estreita ou se rebaixa, porém sem uma causa biológica explicável, levando o indivíduo a fazer uma amnésia seletiva de fatos, de lugares, de si mesmo, de pessoas e/ou de fatos psicologicamente significativos."
             },
             {
                 "descricao": "Alterações do apetite ou do comportamento alimentar",
+                "descricaoResumida": "Alterações do apetite ou comportamento alimentar",
                 "peso": 2,
                 "manifestacao": false,
                 "detalhes": "Inclui perda ou aumento do apetite de maneira significativa, além de compulsões alimentares, dietas restritivas e/ou indução de vômito ou diarreia."
             },
             {
                 "descricao": "Preocupação excessiva com o peso e/ou a forma corporal com distorção da autoimagem",
+                "descricaoResumida": "Preocupação excessiva com o peso ou forma corporal",
                 "peso": 2,
                 "manifestacao": false,
                 "detalhes": "Preocupação excessiva em perder peso ou alterações da imagem corporal, que ocorrem quando o usuário não identifica corretamente seu padrão corporal."
             },
             {
                 "descricao": "Queixas físicas (somáticas) persistentes sem causa aparente e/ou hipocondríacas",
+                "descricaoResumida": "Hipocondria e/ou queixas físicas infundadas",
                 "peso": 2,
                 "manifestacao": false,
                 "detalhes": "Sensações corporais muito frequentes e/ou sensações e sinais físicos triviais interpretados como anormais e perturbadores levando a um temor de estar com alguma doença que não tenha causa biológica explicável. Costumam levar o indivíduo a obter atenção de terceiros ou outro ganho secundário."
             },
             {
                 "descricao": "Pensamentos ou comportamentos repetitivos/compulsivos com ou sem rituais obsessivos",
+                "descricaoResumida": "Pensamento/comportamento obsessivo-compulsivo",
                 "peso": 2,
                 "manifestacao": false,
                 "detalhes": "Pensamentos ou atos em geral incompreensíveis, inevitáveis e indesejáveis pelo próprio individuo, julgados por ele como absurdos e irracionais. São exemplos: a reflexão demorada e persistente de ideias, os rituais de verificação (ex. checar várias vezes se a porta está trancada) e os de limpeza (ex. lavar a mão excessivamente, algumas vezes a ponto de se lesionar). Tais comportamentos costumam ser realizados para aliviar algum desconforto emocional subjetivo."
             },
             {
                 "descricao": "Pensamentos de inutilidade e/ou sentimento de culpa (situações nas quais pode não haver vinculação com a realidade)",
+                "descricaoResumida": "Pensamento de inutilidade e/ou sentimento de culpa",
                 "peso": 4,
                 "manifestacao": false,
                 "detalhes": "São crenças pessimistas em que o indivíduo se autoacusa de acontecimentos diversos os quais não tem responsabilidade direta. Em geral se acompanham de sentimentos depressivos e podem evoluir para ideias desconectadas da realidade."
             },
             {
                 "descricao": "Tristeza persistente acompanhada de perda de interesse e prazer e/ou desesperança sem causa aparente",
+                "descricaoResumida": "Tristeza persistente com perda de interesse e prazer e/ou desesperança",
                 "peso": 4,
                 "manifestacao": false,
                 "detalhes": "Sentimentos de tristeza observados ou referidos pelo indivíduo que são acompanhados de prolongada ausência de vontades e desejos, com inibição global do funcionamento mental, sem necessariamente ter uma causa definida."
             },
             {
                 "descricao": "Prejuízo da atividade sexual (perda ou aumento do desejo sexual, impotência, frigidez, dor na penetração, entre outros)",
+                "descricaoResumida": "Prejuízo da atividade sexual ",
                 "peso": 2,
                 "manifestacao": false,
                 "detalhes": "Quando há relatos de dificuldades para estabelecer relações sexuais, que podem incluir perda ou aumento do desejo sexual, impotência, frigidez, dor na penetração, entre outros."
             },
             {
                 "descricao": "Desorientação temporal e/ou espacial",
+                "descricaoResumida": "Desorientação temporal e/ou espacial",
                 "peso": 2,
                 "manifestacao": false,
                 "detalhes": "Prejuízo ou incapacidade de a pessoa reconhecer a data (dia, mês e ano) atual e o local em que se encontra."
@@ -83,78 +95,91 @@
         "sintomas": [
             {
                 "descricao": "Ideação suicida sem planejamento",
+                "descricaoResumida": "Ideação suicida sem planejamento",
                 "peso": 4,
                 "manifestacao": false,
                 "detalhes": "É a intenção de matar-se. Tema que deve ser abordado em qualquer investigação de sofrimento psíquico, permitindo ao usuário falar do assunto para que o risco de suicídio seja avaliado."
             },
             {
                 "descricao": "Ideação suicida com planejamento\u00B2 ou histórico de tentativa de suicídio recente (últimos 12 meses)",
+                "descricaoResumida": "Ideação suicida com planejamento\u00B2 ou recente tentativa de suicídio",
                 "peso": 10,
                 "manifestacao": false,
                 "detalhes": "Intenção de matar-se somada ao planejamento da ação. Caso haja acesso aos meios para concretizá- la, associado a um transtorno mental (especialmente depressão ou abuso de substâncias), desespero, presença de delírio ou alucinação, o usuário deverá ser encaminhado imediatamente a serviço de urgência. O histórico de tentativa de suicídio nos últimos 12 meses deve ser avaliado, pois é o maior fator de risco para o suicídio."
             },
             {
                 "descricao": "Apatia, diminuição do desempenho social, distanciamento afetivo e/ou afastamento do convívio social e familiar",
+                "descricaoResumida": "Apatia com ou sem isolamento social",
                 "peso": 4,
                 "manifestacao": false,
                 "detalhes": "Pouca expressão de emoções e afetos; quando há relatos de isolamento, quando a pessoa deixa de frequentar locais ou interagir com pessoas com quem mantinha vínculo próximo."
             },
             {
                 "descricao": "Humor instável associado a impulsividade e comportamentos destrutivos",
+                "descricaoResumida": "Humor instável com impulsividade ou destrutividade",
                 "peso": 6,
                 "manifestacao": false,
                 "detalhes": "Comportamentos impulsivos, imprevisíveis, dificuldade em lidar com a frustração, muitas vezes realizando ações de auto ou heteroagressões."
             },
             {
                 "descricao": "Heteroagressividade e/ou comportamento autolesivo",
+                "descricaoResumida": "Heteroagressividade e/ou autoagressividade",
                 "peso": 8,
                 "manifestacao": false,
                 "detalhes": "A heteroagressividade é a alteração de conduta em que o indivíduo usa práticas de violência verbal ou física contra os outros ou contra objetos. O comportamento autolesivo é a alteração de conduta em que o indivíduo realiza ações de violência física contra si (cortes, beliscões, queimaduras, entre outros)."
             },
             {
                 "descricao": "Desinibição social, sexual e/ou perda da noção de pudor",
+                "descricaoResumida": "Desinibição social, sexual ou perda de pudor",
                 "peso": 4,
                 "manifestacao": false,
                 "detalhes": "Alteração de comportamento em que o indivíduo perde a noção de pudor, com atitudes exageradamente sedutoras ou consideradas obscenas, como por exemplo, exposição dos órgãos genitais. Em geral se acompanham de sentimentos de euforia e/ou de grandeza."
             },
             {
                 "descricao": "Aumento da atividade motora com ou sem inquietação excessiva e constante",
+                "descricaoResumida": "Hiperatividade motora",
                 "peso": 4,
                 "manifestacao": false,
                 "detalhes": "Aumento da atividade motora associada ou não a ações involuntárias, automáticas, sem reflexão ou ponderação, em geral incontroláveis, e sem objetivo específico, podendo levar a exaustão."
             },
             {
                 "descricao": "Humor anormalmente elevado, expansivo, irritável ou eufórico",
+                "descricaoResumida": "Humor elevado, expansivo, irritável ou eufórico",
                 "peso": 4,
                 "manifestacao": false,
                 "detalhes": "Elevação desproporcional do humor compreendida como uma alegria patológica em que o indivíduo está demasiado otimista, motivado, exaltado, comunicativo. Pode apresentar pressão para falar sem parar resultando num discurso acelerado, contagiante, repleto de brincadeiras e gesticulações. O indivíduo pode expressar vivências exageradas de qualidades pessoais, poder, ganho, grandeza e sucesso relacionados a si mesmo."
             },
             {
                 "descricao": "Delírio (ideias criadas e/ou distorcidas da realidade cujo questionamento não é tolerado)",
+                "descricaoResumida": "Delírio (pensamento)",
                 "peso": 8,
                 "manifestacao": false,
                 "detalhes": "Distúrbio do conteúdo do pensamento em que o indivíduo tem ideias em desacordo com a realidade (cria, distorce ou dá falso significado). Essas são crenças das quais ele tem absoluta convicção, sendo irremovíveis e não influenciáveis."
             },
             {
                 "descricao": "Alucinação (percepção visual, auditiva, gustativa, olfativa, ou tátil sem a presença de objetos reais)",
+                "descricaoResumida": "Alucinação (sensopercepção)",
                 "peso": 8,
                 "manifestacao": false,
                 "detalhes": "Alteração da percepção visual, auditiva, olfativa, gustativa ou tátil que é clara e definida apesar de o objeto não estar presente na realidade."
             },
             {
                 "descricao": "Alteração do curso e/ou da forma do pensamento (pode estar acelerado, lentificado ou interrompido)",
+                "descricaoResumida": "Alteração do curso e/ou da forma do pensamento",
                 "peso": 6,
                 "manifestacao": false,
                 "detalhes": "Aceleração/lentificação nas respostas, sensação de interrupção do pensamento, ou ainda crença de que outras pessoas ouvem ou percebem seus pensamentos e/ou que seu pensamento foi roubado da mente (alteração no curso ). Fuga de ideias, pensamentos que deixam de seguir uma sequência lógica ou perda de coerência (alterações da forma)."
             },
             {
                 "descricao": "Perda da capacidade de julgamento da realidade sem que haja consciência ou noção desta alteração",
+                "descricaoResumida": "Perda da capacidade crítica da realidade",
                 "peso": 8,
                 "manifestacao": false,
                 "detalhes": "Alteração do pensamento em que há um julgamento falso ou distorcido da realidade motivado por fatores psíquicos patológicos, que se evidencia principalmente quando há alucinações e delírios. Em geral se acompanha de perda das capacidades de autogerenciamento."
             },
             {
                 "descricao": "Alteração da memória (perda, excesso ou lapso)",
+                "descricaoResumida": "Alteração da memória",
                 "peso": 2,
                 "manifestacao": false,
                 "detalhes": "Dificuldade ou incapacidade para recordar fatos ocorridos antes, durante ou após um determinado ponto no tempo."
@@ -167,36 +192,42 @@
         "sintomas": [
             {
                 "descricao": "Delirium tremens (diminuição do nível da consciência, tremores, febre, sudorese, alucinações de pequenos insetos e animais e outros sintomas que surgem após 72 horas de abstinência alcoólica)",
+                "descricaoResumida": "Delirium tremens",
                 "peso": 10,
                 "manifestacao": false,
                 "detalhes": "Psicose orgânica reversível que dura de 2 a 10 dias e que resulta da interrupção da ingestão de bebida alcoólica. Inicia-se geralmente 72 horas após a ingestão da última dose de bebida alcoólica, e manifesta-se com diminuição do nível da consciência, confusão mental, desorientação no tempo e espaço, tremores de extremidade e generalizados, insônia, febre, sudorese abundante, ilusões e alucinações visuais e táteis (pequenos insetos e animais) podendo levar à morte pela desidratação e outras complicações."
             },
             {
                 "descricao": "Sinais ou sintomas de abstinência ao uso continuado de álcool e/ou drogas",
+                "descricaoResumida": "Sinais ou sintomas de abstinência ao uso continuado de álcool e/ou drogas",
                 "peso": 8,
                 "manifestacao": false,
                 "detalhes": "Alterações físicas e psicológicas caracterizadas por sintomas como mal-estar, ansiedade, irritabilidade, hipertensão, insônia, náusea, agitação, taquicardia, etc. Podem surgir minutos ou horas após a privação do consumo de álcool ou outras drogas psicoativas. Tremores finos observáveis nas mãos, pernas e língua e hálito e/ou suor com cheiro de álcool são observadas na dependência ao álcool bem como fissura (desejo) pelo uso da droga, inquietude e comportamento de busca, ansiedade, irritabilidade podem ser observados na interrupção do uso de psicoestimulantes como a cocaína."
             },
             {
                 "descricao": "Incapacidade de redução e controle do uso de substâncias psicoativas (mantém o uso apesar do prejuízo)",
+                "descricaoResumida": "Incapacidade de redução e controle do consumo de álcool e/ou drogas",
                 "peso": 8,
                 "manifestacao": false,
                 "detalhes": "Situação em que o indivíduo, apesar dos prejuízos pessoais sofridos em decorrência da ingestão de álcool ou drogas, continua o uso dos mesmos."
             },
             {
                 "descricao": "Manifestação de comportamento de risco para si e para terceiros sob efeito de substâncias",
+                "descricaoResumida": "Comportamento de risco, para si ou terceiros, sob efeito de álcool e/ou drogas",
                 "peso": 6,
                 "manifestacao": false,
                 "detalhes": "Atitudes pessoais que colocam o indivíduo em risco de morrer, de causar danos para outros, de sofrer prejuízo físico, emocional ou moral. Ex: dirigir embriagado, relação sexual desprotegida, intoxicação alcoólica aguda, coma alcoólico, abandono de higiene e alimentação."
             },
             {
                 "descricao": "Consumo progressivo de substância psicoativa sem obter o efeito esperado (tolerância)",
+                "descricaoResumida": "Tolerância ao efeito do consumo de álcool e/ou drogas",
                 "peso": 6,
                 "manifestacao": false,
                 "detalhes": "Necessidade de ingerir quantidades de substâncias psicoativas progressivamente maiores para obter o mesmo efeito observado inicialmente em pequenas quantidades."
             },
             {
                 "descricao": "Uso abusivo de Substâncias Psicoativas",
+                "descricaoResumida": "Uso abusivo de álcool e/ou drogas",
                 "peso": 8,
                 "manifestacao": false,
                 "detalhes": "Padrão de uso de psicofármacos, álcool ou outras drogas que causa prejuízo ou dano real à saúde, à vida social e profissional do usuário; sem que se observem tolerância, abstinência e sinais e sintomas de abstinência presentes em casos de dependência química.\nSubstância psicoativa (SPA): Substância química que atua diretamente no sistema nervoso central causando alterações na função cerebral com consequente modificação no pensamento, no humor, nas percepções, no comportamento e/ou na consciência. Com diferentes capacidades de causar dependência, têm utilidade e significados diferentes para aqueles que as consomem."
@@ -209,48 +240,56 @@
         "sintomas": [
             {
                 "descricao": "Dificuldade de compreender e/ou transmitir informação através da fala e linguagem no período de desenvolvimento infantil",
+                "descricaoResumida": "Dificuldade de compreender e/ou transmitir informação verbal manifesta no desenvolvimento infantil",
                 "peso": 4,
                 "manifestacao": false,
                 "detalhes": "Pode ser dificuldade da fala, da escrita, da expressão facial, da gesticulação corporal, do aprendizado e da compreensão, observados com maior frequência no período escolar."
             },
             {
                 "descricao": "Movimentos corporais ou comportamentais repetitivos, bizarros ou paralisados",
+                "descricaoResumida": "Movimentos corporais ou comportamentais repetitivos, bizarros ou paralisados",
                 "peso": 4,
                 "manifestacao": false,
                 "detalhes": "São gestos, trejeitos, tiques, maneirismos, posturas que são repetidas ou, ao contrário, são mantidas por longos períodos, mas sem um propósito específico ou objetivo aparente."
             },
             {
                 "descricao": "Dificuldade para adquirir e desenvolver as habilidades escolares",
+                "descricaoResumida": "Dificuldade para adquirir e desenvolver as habilidades escolares",
                 "peso": 4,
                 "manifestacao": false,
                 "detalhes": "Dificuldades para reter o conhecimento escolar, dificuldades no aprendizado e leitura, atraso no desenvolvimento de habilidades educacionais."
             },
             {
                 "descricao": "Dificuldade para adquirir e desenvolver as habilidades motoras",
+                "descricaoResumida": "Dificuldade para adquirir e desenvolver as habilidades motoras",
                 "peso": 4,
                 "manifestacao": false,
                 "detalhes": "Dificuldade para realizar atividades esperadas para sua idade, decorrente de limitações no desenvolvimento neuropsicomotor (ex. Criança de seis anos que não consegue segurar o lápis com firmeza)."
             },
             {
                 "descricao": "Severa dificuldade na interação social e às mudanças na rotina",
+                "descricaoResumida": "Severa dificuldade na interação social e às mudanças na rotina",
                 "peso": 8,
                 "manifestacao": false,
                 "detalhes": "Indivíduo que não estabelece contato com outras pessoas e pouco interage com seu círculo familiar/social (restrito ou escasso contato visual, oral e/ou tátil). Pode apresentar rejeição às mudanças na rotina, com comportamentos opositores a estas."
             },
             {
                 "descricao": "Desatenção com interrupção prematura de tarefas e/ou deixando tarefas inacabadas",
+                "descricaoResumida": "Desatenção com interrupção prematura de tarefas e/ou deixando tarefas inacabadas",
                 "peso": 2,
                 "manifestacao": false,
                 "detalhes": "Padrão de comportamento caracterizado por falta de atenção, resultando em desorganização, distratibilidade, esquecimentos e dificuldade de planejamento."
             },
             {
                 "descricao": "Comportamento provocativo, desafiador e/ou opositor persistente",
+                "descricaoResumida": "Desatenção com interrupção prematura de tarefas e/ou deixando tarefas inacabadas",
                 "peso": 6,
                 "manifestacao": false,
                 "detalhes": "Padrão de comportamento desafiante e desobediente, ocorre recorrentemente e pode ser direcionado às figuras de autoridade ou colegas e pode associar-se a comportamentos agressivos e vingativos."
             },
             {
                 "descricao": "Comportamentos ou reações emocionais que não correspondem ao esperado para a idade biológica",
+                "descricaoResumida": "Comportamentos ou reações emocionais que não correspondem ao esperado para a idade biológica",
                 "peso": 4,
                 "manifestacao": false,
                 "detalhes": "Tendência a apresentar comportamentos ou reações afetivas características de épocas anteriores ao atual nível de desenvolvimento e experiência pessoal (também denominado puerilismo ou infantilismo afetivo) e/ou manifestações precoces de sexualidade inconsistente com o período de desenvolvimento. Inclui enurese, encoprese, pesadelo e terror noturno."
@@ -263,78 +302,91 @@
         "sintomas": [
             {
                 "descricao": "Resistência ao tratamento, refratariedade ou não adesão",
+                "descricaoResumida": "Resistência, refratariedade, não adesão ao tratamento",
                 "peso": 4,
                 "manifestacao": false,
                 "detalhes": "Resposta inefetiva a diversos tratamentos administrados de maneira adequada, seja por não aderência do usuário, por permanência dos sintomas, ou por evidências de fracasso nos tratamentos psiquiátricos anteriores."
             },
             {
                 "descricao": "Recorrência ou Recaída (02 meses após desaparecimento dos sintomas)",
+                "descricaoResumida": "Recorrência ou recaída (após 2 meses de remissão dos sintomas)",
                 "peso": 4,
                 "manifestacao": false,
                 "detalhes": "Retorno da atividade de uma doença após um período de pelo menos 02 meses em que houve remissão (desaparecimento) completa dos sintomas. Pode ser uma manifestação clínica ou laboratorial. Um 1o episódio é considerado único, episódios subsequentes são “recorrentes” ou “recidivantes”."
             },
             {
                 "descricao": "Exposição continuada ao estresse ou evento traumático acima do individualmente suportável",
+                "descricaoResumida": "Exposição continuada ao estresse ou evento traumático",
                 "peso": 4,
                 "manifestacao": false,
                 "detalhes": "Quando o indivíduo convive repetidamente ou por tempo prolongado, com eventos ou circunstâncias em sua vida pessoal, familiar, profissional ou social, ou, ainda, quando passou por evento traumático, que gerem alteração, reação ou sofrimento emocional inevitável e acima do individualmente suportável."
             },
             {
                 "descricao": "Precariedade de suporte familiar e/ou social com ou sem isolamento social e distanciamento afetivo",
+                "descricaoResumida": "Precariedade de suporte familiar e/ou social",
                 "peso": 4,
                 "manifestacao": false,
                 "detalhes": "Quando não há familiares e/ou pessoas de sua comunidade disponíveis para prestar alguma assistência, supervisão, monitoramento ou encaminhamento para tratamento; com ou sem tendência a manter-se afastado do convívio e/ou contato familiar ou social."
             },
             {
                 "descricao": "Testemunha de violência ",
+                "descricaoResumida": "Testemunha de violência",
                 "peso": 2,
                 "manifestacao": false,
                 "detalhes": "Pessoa que assistiu de forma presencial ato de violência física contra terceiros."
             },
             {
                 "descricao": "Autor ou Vítima de violência interpessoal",
+                "descricaoResumida": "Autor ou Vítima de violência interpessoal",
                 "peso": 6,
                 "manifestacao": false,
                 "detalhes": "Pessoa que sofreu ou cometeu ato de violência física contra terceiros."
             },
             {
                 "descricao": "Perda da funcionalidade familiar e/ou social (autonomia)",
+                "descricaoResumida": "Perda da autonomia",
                 "peso": 6,
                 "manifestacao": false,
                 "detalhes": "Quando o indivíduo perdeu a capacidade de gerenciar sua vida, necessitando auxílio constante de outras pessoas."
             },
             {
                 "descricao": "Perda progressiva da capacidade funcional, ocupacional e social decorrentes de um agravo de saúde",
+                "descricaoResumida": "Perda da capacidade funcional/ocupacional devido agravo de saúde",
                 "peso": 4,
                 "manifestacao": false,
                 "detalhes": "Quando o indivíduo tem alteração ou condição de saúde que interfere diretamente e progressivamente em seu desempenho de atividades funcionais, ocupacionais e sociais. Um exemplo é uma pessoa que adquire uma doença e passa a ter limitações decorrentes da evolução da mesma."
             },
             {
                 "descricao": "Vulnerabilidade social ",
+                "descricaoResumida": "Vulnerabilidade social",
                 "peso": 2,
                 "manifestacao": false,
                 "detalhes": "Situação de pessoas ou grupos com dificuldades devido a condições socioeconômicas, de moradia, educação, trabalho, acesso, oportunidades e fatores como gênero, raça/cor/etnia, migração, entre outros que interferem na qualidade de vida."
             },
             {
                 "descricao": "Histórico familiar de transtorno mental / dependência química / suicídio ",
+                "descricaoResumida": "Histórico familiar de transtorno mental / dependência química / suicídio",
                 "peso": 2,
                 "manifestacao": false,
                 "detalhes": "Quando algum familiar direto do usuário possui algum transtorno mental, podendo incluir dependência química a álcool ou outras drogas e histórico de tentativas de suicídio."
             },
             {
                 "descricao": "Comorbidade ou outra condição crônica de saúde associada ",
+                "descricaoResumida": "Comorbidade ou outra condição crônica de saúde",
                 "peso": 4,
                 "manifestacao": false,
                 "detalhes": "Quando uma ou mais doenças ou condições crônicas estão presentes ao mesmo tempo que o transtorno mental."
             },
             {
                 "descricao": "Faixa etária menores de 18 anos e maiores de 60 anos ",
+                "descricaoResumida": "Faixaetária < 18anos e > de 60 anos",
                 "peso": 6,
                 "manifestacao": false,
                 "detalhes": "Pessoa com idade cronológica superior a 60 (sessenta) anos e inferior a 18 (dezoito) anos."
             },
             {
                 "descricao": "Abandono e/ou atraso escolar ",
+                "descricaoResumida": "Abandono e/ou atraso escolar",
                 "peso": 2,
                 "manifestacao": false,
                 "detalhes": "Quando o aluno deixa de ir à escola ou está em atraso de no mínimo 02 (dois) anos consecutivos do período escolar."
