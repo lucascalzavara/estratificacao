@@ -379,7 +379,7 @@
             },
             {
                 "descricao": "Faixa etária menores de 18 anos e maiores de 60 anos ",
-                "descricaoResumida": "Faixaetária < 18anos e > de 60 anos",
+                "descricaoResumida": "Faixa etária < 18anos e > de 60 anos",
                 "peso": 6,
                 "manifestacao": false,
                 "detalhes": "Pessoa com idade cronológica superior a 60 (sessenta) anos e inferior a 18 (dezoito) anos."
