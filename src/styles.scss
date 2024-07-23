@@ -1,4 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+/* Importing Datepicker SCSS file. */
+@import "node_modules/ngx-bootstrap/datepicker/bs-datepicker";
+
 .hover{
     background-color: white;
 }
@@ -41,9 +44,3 @@ i.bi {
 .border-top{
     border-top: 1px solid black;
 }
-
-/* Importing Bootstrap SCSS file. */
-@import "./node_modules/bootstrap/scss/bootstrap";
-
-/* Importing Datepicker SCSS file. */
-@import "node_modules/ngx-bootstrap/datepicker/bs-datepicker";

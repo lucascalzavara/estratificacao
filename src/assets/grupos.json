@@ -101,8 +101,8 @@
                 "detalhes": "É a intenção de matar-se. Tema que deve ser abordado em qualquer investigação de sofrimento psíquico, permitindo ao usuário falar do assunto para que o risco de suicídio seja avaliado."
             },
             {
-                "descricao": "Ideação suicida com planejamento\u00B2 ou histórico de tentativa de suicídio recente (últimos 12 meses)",
-                "descricaoResumida": "Ideação suicida com planejamento\u00B2 ou recente tentativa de suicídio",
+                "descricao": "Ideação suicida com planejamento\u00B9 ou histórico de tentativa de suicídio recente (últimos 12 meses)",
+                "descricaoResumida": "Ideação suicida com planejamento\u00B9 ou recente tentativa de suicídio",
                 "peso": 10,
                 "manifestacao": false,
                 "detalhes": "Intenção de matar-se somada ao planejamento da ação. Caso haja acesso aos meios para concretizá- la, associado a um transtorno mental (especialmente depressão ou abuso de substâncias), desespero, presença de delírio ou alucinação, o usuário deverá ser encaminhado imediatamente a serviço de urgência. O histórico de tentativa de suicídio nos últimos 12 meses deve ser avaliado, pois é o maior fator de risco para o suicídio."

@@ -14,7 +14,7 @@
         <div class="col-3">
             <div class="mb-1">
                 <label class="fs-8">Data de nascimento</label>
-                <div class="fs-7">{{estratificacao.dataNascimento}}</div>
+                <div class="fs-7">{{estratificacao.dataNascimento | date: 'dd/MM/yyyy'}}</div>
             </div>
         </div>
         <div class="col-3">
@@ -43,8 +43,8 @@
         </div>
         <div class="col-6">
             <div class="mb-1">
-                <label class="fs-8">Encaminhado por</label>
-                <div class="fs-7">{{estratificacao.servicoSaude}}</div>
+                <label class="fs-8">Em caminho para</label>
+                <div class="fs-7">{{estratificacao.servicoSaude !== 'Outros' ? estratificacao.servicoSaude : estratificacao.servicoSaudeEspecifico}}</div>
             </div>
         </div>
         <div class="col-3">
@@ -65,29 +65,13 @@
                 <div class="fs-7">{{estratificacao.nomeInscricaoProficional}}</div>
             </div>
         </div>
-        <div class="col-4">
-            <div class="mb-1">
-                <label class="fs-8">Data</label>
-                <div class="fs-7">{{estratificacao.data | date:'dd/MM/yyyy'}}</div>
-            </div>
-        </div>
         <div class="col-8">
             <div class="mb-1">
-                <label class="fs-8">Referência</label>
-                <div class="fs-7">{{estratificacao.referencia}}</div>
-            </div>
-        </div><div class="col-4">
-            <div class="mb-1">
-                <label class="fs-8">Contrarreferência</label>
-                <div class="fs-7">{{estratificacao.contrarreferencia}}</div>
+                <label class="fs-8">Informações adicionais</label>
+                <div class="fs-7">{{estratificacao.informacoesAdicionais}}</div>
             </div>
         </div>
-    </div>
-    <hr>
-    <h5 class="fs-7">Instruções de preenchimento<sup>1</sup></h5>
-    <div class="fs-8">1) Devem ser consideradas as manifestações sintomáticas ocorridas somente nos últimos 12 meses</div>
-    <div class="fs-8">2) Todos os grupos devem ser preenchidos</div>
-    <div class="fs-8">3) Marque com "sim" o sinal/sintoma presente</div>
+    </div>  
     <hr>
     <ng-container *ngFor="let grupo of estratificacao.grupos; let ig = index;">
         <div class="row border rounded p-1 m-1" [ngClass]="{'grupo-bc-color-1': ig % 2 === 0, 'grupo-bc-color-2': ig % 2 !== 0}">
@@ -113,10 +97,7 @@
         </div>
     </ng-container>
     <div class="text-justify fs-8">
-        1 - Realizada preferencialmente pelo profissional de nível superior e vinculada à elaboração do plano de cuidados e/ou ao Projeto Terapêutico Singular.
-    </div>
-    <div class="text-justify fs-8">
-        2 - Caso o usuário apresente ideação suicida com planejamento e com acesso a um método, associado a um transtorno mental (especialmente depressão ou abuso de substâncias), desespero, presença de delírio ou alucinação ele deverá ser encaminhado imediatamente a serviço de urgência.
+        1 - Caso o usuário apresente ideação suicida com planejamento e com acesso a um método, associado a um transtorno mental (especialmente depressão ou abuso de substâncias), desespero, presença de delírio ou alucinação ele deverá ser encaminhado imediatamente a serviço de urgência.
     </div>
     <hr>
     <h5 class="fs-7">Estratificação</h5>

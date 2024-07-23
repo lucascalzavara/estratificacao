@@ -38,14 +38,26 @@
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-xl-3">
             <div class="mb-3">
-                <label for="telefone" class="form-label">Complemento</label>
-                <input type="text" class="form-control" id="telefone" [(ngModel)]="estratificacao.complemento" />
+                <label for="complemento" class="form-label">Complemento</label>
+                <input type="text" class="form-control" id="complemento" [(ngModel)]="estratificacao.complemento" />
             </div>
         </div>
-        <div class="col-12 col-xl-6">
+        <div class="col-12" [ngClass]="{'col-xl-6': estratificacao.servicoSaude !== 'Outros', 'col-xl-2': estratificacao.servicoSaude === 'Outros'}">
+            <label for="servicoSaude" class="form-label">Em caminho para</label>
+            <select id="servicoSaude" class="form-select" [(ngModel)]="estratificacao.servicoSaude">
+                <option value="" selected disabled>Selecione um</option>
+                <option value="Psiquiatra">Psiquiatra</option>
+                <option value="CAPS AD">CAPS AD</option>
+                <option value="CAPS I">CAPS I</option>
+                <option value="CAPS II">CAPS II</option>
+                <option value="Psicologia">Psicologia</option>
+                <option value="Outros">Outros</option>
+            </select>
+        </div>
+        <div class="col-12 col-xl-4" [ngClass]="{'d-none': estratificacao.servicoSaude !== 'Outros', 'd-block': estratificacao.servicoSaude === 'Outros'}">
             <div class="mb-3">
-                <label for="complemento" class="form-label">Encaminhado por</label>
-                <input type="text" class="form-control" id="complemento" [(ngModel)]="estratificacao.servicoSaude" />
+                <label for="especifique" class="form-label">Especifique</label>
+                <input type="text" class="form-control" id="especifique" [(ngModel)]="estratificacao.servicoSaudeEspecifico" />
             </div>
         </div>
         <div class="col-12 col-sm-6 col-xl-3">
@@ -60,7 +72,7 @@
                 <input type="text" class="form-control" id="cartaoSus" [(ngModel)]="estratificacao.cartaoSus" />
             </div>
         </div>
-        <div class="col-12 col-sm-8">
+        <div class="col-12">
             <div class="mb-3">
                 <label for="nomeProfissional" class="form-label">Nome e inscrição profissional (profissional que
                     realizou atendimento)</label>
@@ -68,38 +80,27 @@
                     [(ngModel)]="estratificacao.nomeInscricaoProficional" />
             </div>
         </div>
-        <div class="col-12 col-sm-4">
+        <div class="col-12 col-sm-12 col-md-12">
             <div class="mb-3">
-                <label for="data" class="form-label">Data</label>
-                <input type="date" class="form-control" id="data" [(ngModel)]="estratificacao.data" />
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-8">
-            <div class="mb-3">
-                <label for="referencia" class="form-label">Referência</label>
-                <input type="text" class="form-control" id="referencia" [(ngModel)]="estratificacao.referencia" />
-            </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4">
-            <div class="mb-3">
-                <label for="contrarreferencia" class="form-label">Contrarreferência</label>
-                <input type="text" class="form-control" id="contrarreferencia"
-                    [(ngModel)]="estratificacao.contrarreferencia" />
+                <label for="informacoesAdicionais" class="form-label">Informações adicionais (Medicações, histórico ...)</label>
+                <input type="text" class="form-control" id="informacoesAdicionais" [(ngModel)]="estratificacao.informacoesAdicionais" />
             </div>
         </div>
     </div>
     <hr>
-    <h5>Instruções de preenchimento<sup>1</sup></h5>
-    <div>1) Devem ser consideradas as manifestações sintomáticas ocorridas somente nos últimos 12 meses</div>
-    <div>2) Todos os grupos devem ser preenchidos</div>
-    <div>3) Marque com "sim" o sinal/sintoma presente</div>
-    <div class="d-flex align-items-center justify-content-center">
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalInstrucoes">
+        Instruções de preenchimento
+    </button>
+    <h2 class="mt-3 fw-bold">Atenção!</h2>
+    Esse instrumento não é um questionário, portanto o profissional não deve perguntar cada item ao usuário e nem
+    entregar ao usuário para ele responder.
+    <!-- <div class="d-flex align-items-center justify-content-center">
         <input type="radio" class="btn-check" name="versao" id="versao-resumida" autocomplete="off" checked (click)="setResumida(true)">
         <label class="btn btn-outline-success m-3" for="versao-resumida">Versão resumida</label>
 
         <input type="radio" class="btn-check" name="versao" id="versao-completa" autocomplete="off" (click)="setResumida(false)">
         <label class="btn btn-outline-success m-3" for="versao-completa">Versão completa</label>
-    </div>
+    </div> -->
     <hr>
     <ng-container *ngFor="let grupo of estratificacao.grupos; let ig = index;">
         <div class="row border rounded p-1 m-1 mt-2 mb-2"
@@ -134,11 +135,7 @@
         </div>
     </ng-container>
     <div class="text-justify">
-        1 - Realizada preferencialmente pelo profissional de nível superior e vinculada à elaboração do plano de
-        cuidados e/ou ao Projeto Terapêutico Singular.
-    </div>
-    <div class="text-justify">
-        2 - Caso o usuário apresente ideação suicida com planejamento e com acesso a um método, associado a um
+        1 - Caso o usuário apresente ideação suicida com planejamento e com acesso a um método, associado a um
         transtorno mental (especialmente depressão ou abuso de substâncias), desespero, presença de delírio ou
         alucinação ele deverá ser encaminhado imediatamente a serviço de urgência.
     </div>
@@ -179,9 +176,57 @@
         </div>
     </div>
     <hr>
-    <div class="mb-3 d-flex align-items-center justify-content-center">
-        <button type="button" class="btn btn-outline-warning m-3" (click)="limpar()">Limpar</button>
-        <button type="button" class="btn btn-outline-primary m-3" (click)="imprimir()">Imprimir</button>
+    <div class="mb-3 d-flex align-items-center justify-content-between">
+        <button type="button" class="btn btn-warning" (click)="limpar()">Limpar</button>
+        <button type="button" class="btn btn-primary" (click)="imprimir()">Imprimir</button>
     </div>
 </div>
 <div class="bg-success bg-opacity-50 p-3"></div>
+
+
+<div class="modal modal-xl fade" id="modalInstrucoes" tabindex="-1" role="dialog"
+    aria-labelledby="modalInstrucoesLabel">
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalInstrucoesLabel">Instruções de preenchimento</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div>1) Devem ser consideradas as manifestações sintomáticas ocorridas somente nos últimos 12 meses
+                </div>
+                <div>2) Todos os grupos devem ser preenchidos</div>
+                <div>3) Marque com "sim" o sinal/sintoma presente</div>
+                <div>4) Realizada preferencialmente pelo profissional de nível superior e vinculada à elaboração do
+                    plano de cuidados e/ou ao Projeto Terapêutico Singular</div>
+                <div>
+                    <div class="fw-bold mt-2">Quem aplica o instrumento?</div>
+                    Profissionais de nível superior atuantes em diversos pontos da Rede de Atenção à Saúde (RAS), com
+                    ênfase
+                    nos profissionais da Atenção Primária à Saúde.
+                </div>
+                <div>
+                    <div class="fw-bold mt-2">A quem se aplica o instrumento?</div>
+                    O instrumento é aplicado a usuários que apresentem ou relatem sofrimento mental, necessidades
+                    decorrentes do uso de álcool e outras drogas, ou qualquer condição de saúde em que a identificação
+                    de
+                    risco em saúde mental possa orientar intervenções e trazer benefícios. A avaliação abrange todas as
+                    faixas etárias, incluindo crianças, adolescentes, adulto ou idoso.
+                </div>
+                <div>
+                    <div class="fw-bold mt-2">Quando fazer a estratificação?</div>
+                    A estratificação deve ser realizada sempre que um usuário da RAS apresente ou relate sofrimento
+                    mental,
+                    necessidades decorrentes do uso de álcool e outras drogas, ou qualquer condição de saúde em que a
+                    identificação do risco em saúde mental possa orientar intervenções e proporcionar benefícios. O
+                    instrumento pode ser reaplicado conforme necessário, por exemplo, quando houver mudanças no quadro
+                    clínico ou novas queixas relacionadas à saúde.
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
