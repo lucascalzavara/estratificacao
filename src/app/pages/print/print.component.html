@@ -2,7 +2,7 @@
     <li class="nav-item">
         <h3>ESTRATIFICAÇÃO DE RISCO EM SAÚDE MENTAL</h3>
     </li>
-  </ul>
+</ul>
 <div class="">
     <div class="row">
         <div class="col-6">
@@ -44,7 +44,8 @@
         <div class="col-6">
             <div class="mb-1">
                 <label class="fs-8">Em caminho para</label>
-                <div class="fs-7">{{estratificacao.servicoSaude !== 'Outros' ? estratificacao.servicoSaude : estratificacao.servicoSaudeEspecifico}}</div>
+                <div class="fs-7">{{estratificacao.servicoSaude !== 'Outros' ? estratificacao.servicoSaude :
+                    estratificacao.servicoSaudeEspecifico}}</div>
             </div>
         </div>
         <div class="col-3">
@@ -71,10 +72,11 @@
                 <div class="fs-7">{{estratificacao.informacoesAdicionais}}</div>
             </div>
         </div>
-    </div>  
+    </div>
     <hr>
     <ng-container *ngFor="let grupo of estratificacao.grupos; let ig = index;">
-        <div class="row border rounded p-1 m-1" [ngClass]="{'grupo-bc-color-1': ig % 2 === 0, 'grupo-bc-color-2': ig % 2 !== 0}">
+        <div class="row border rounded p-1 m-1"
+            [ngClass]="{'grupo-bc-color-1': ig % 2 === 0, 'grupo-bc-color-2': ig % 2 !== 0}">
             <div class="col-12">
                 <div class="h-100 w-100 d-flex justify-content-center align-items-center">
                     <span>{{grupo.nome}}</span>
@@ -97,7 +99,9 @@
         </div>
     </ng-container>
     <div class="text-justify fs-8">
-        1 - Caso o usuário apresente ideação suicida com planejamento e com acesso a um método, associado a um transtorno mental (especialmente depressão ou abuso de substâncias), desespero, presença de delírio ou alucinação ele deverá ser encaminhado imediatamente a serviço de urgência.
+        1 - Caso o usuário apresente ideação suicida com planejamento e com acesso a um método, associado a um
+        transtorno mental (especialmente depressão ou abuso de substâncias), desespero, presença de delírio ou
+        alucinação ele deverá ser encaminhado imediatamente a serviço de urgência.
     </div>
     <hr>
     <h5 class="fs-7">Estratificação</h5>
@@ -116,18 +120,21 @@
         </div>
     </div>
     <table class="mt-3 table table-bordered">
-          <tbody>
+        <tbody>
             <tr>
-              <td class="fw-bold bg-success bg-opacity-10 fs-8">Condições Especiais</td>
-              <td class="bg-success bg-opacity-10 fs-8">Gestação e maternidade recente (há menos de um ano); grupos vulneráveis (ex: indígena, LGBTQIA+, migrante, pessoa em situação de rua, população exposta a agrotóxicos),deficiência intelectual moderada ou severa.</td>
+                <td class="fw-bold bg-success bg-opacity-10 fs-8">Condições Especiais</td>
+                <td class="bg-success bg-opacity-10 fs-8">Gestação e maternidade recente (há menos de um ano); grupos
+                    vulneráveis (ex: indígena, LGBTQIA+, migrante, pessoa em situação de rua, população exposta a
+                    agrotóxicos), deficiência intelectual moderada ou severa.</td>
             </tr>
             <tr>
                 <td class="fw-bold bg-success bg-opacity-10 fs-8">Eventos agudos</td>
                 <td class="bg-success bg-opacity-10 fs-8">Tentativa de suicídio; crise; surto psicótico.</td>
             </tr>
-          </tbody>
+        </tbody>
     </table>
-    <div class="col-4 fs-7">{{estratificacao.local}}<span *ngIf="estratificacao.local">, </span> {{agora | date: 'dd/MM/yyyy'}}</div>
+    <div class="col-4 fs-7">{{estratificacao.local}}<span *ngIf="estratificacao.local">, </span> {{agora | date:
+        'dd/MM/yyyy'}}</div>
     <div class="row mt-5">
         <div class="col-8 offset-2 text-center border-top fs-7">Assinatura/Carimbo do solicitante</div>
     </div>
